@@ -15,17 +15,27 @@
 
         <section class="main-content">
             <div class="box-top">
-                <button class="btn">High Scores</button>
                 <button id="startBtn" class="btn">START QUIZ</button>
-                <div>
+                <div id="timeHAHA">
                     <h4 class="timesLeft" id="timeLeft">Time Left:</h4>
                 </div>
+                <div>
+                    <h4 class="score" id="scoreCounter">Score:</h4>
+                </div>
+                <button href="#leaderArea" class="highScores">Leaderboard</button>
+                <button id="saveLoad" class="highScores">Save Score</button>
             </div>
             <div class="boxMain">
                 <div id="intro" class="intro">
                     <h4>Click the start button above to start practicing some code!</h4>
                 </div>
-                <section class="quiz">
+                <div class="endBar" id="lose">
+
+                </div>
+                <div class="endBar" id="win">
+
+                </div>
+                <section id="quizBox" class="quiz">
                     <div id="questionLoad" class="questionRender">
 
                     </div>
@@ -36,8 +46,36 @@
             </div>
         </section>
 
+        <section class="main-content">
+            <h2 id="leaderArea" class=leader>Leaderboard</h2>
+            <section id="lolLeader" class="leaderboard">
+                <div class="leader1">
+                    <h3>Dylan: 4</h3>
+                </div>
+                <div class="leader2">
+                    <h3>Alex: 1</h3>
+                </div>
+                <div class="leader1">
+                    <h3>Sammy: 5</h3>
+                </div>
+                <div class="leader2">
+                    <h3>John: 4</h3>
+                </div>
+            </section>
+        </section>
 
-
+        <section id="saveSpace" class="saveAreaHidden">
+            <h2 id="leaderArea" class=leader>Save Score</h2>
+            <section class="saveYolo">
+                <div class="test">
+                    <input placeholder="Enter name here" id="saved-name" class="validate" type="text">
+                    <button href="#leaderArea" id="saveButton" class="saveButton">SAVE</button>
+                </div>
+                <div id="saveAlert" class="saveAlertHidden">
+                    <h4>Name saved!</h4>
+                </div>
+            </section>
+        </section>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
